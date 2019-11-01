@@ -1,0 +1,72 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+    <title>Assassin</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+    <meta name="description" content="Assassin" />
+    <meta name="keywords" content="Grab some friends. Get your target. Survive to the end." />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="assets/favicon.png">
+</head>
+<body onload= "checkDevice()">
+    <div id="container">
+
+	<div id="body">
+	<!-- Body start -->
+        <div class="centerContainer">
+            <div class="centerVertical">
+                <a href='/' class="linkNoStyle">
+                    <img class="ninja" src = "assets/ninja.svg">
+                    <h1 class="w3-text-white">Assassin</h1>
+                </a>
+                <div class="typewriter">
+                    <h6>Eliminate your target.</h6>
+                </div>
+                <br><br><br>
+                <a class="betaBtn" id="betaBtn" href='https://forms.gle/qp9puDbuDppmNrqGA'><b>Try the Beta</b></a>
+            </div>
+        </div>
+	<!-- Body end -->
+	</div>
+	
+	<div id="footer" class=" w3-center">
+	<!-- Footer start -->
+            <center>
+		    <!-- <a href='https://itunes.apple.com/us/app/xxxxxxxx/id0000000000?mt=8'><img class="iosimg" alt='Download on Apple App Store' src='assets/iosBadge.svg'/></a>
+    		<p></p>
+    		<a href='https://play.google.com/store/apps/details?id=com.jacksheridan.assassin'><img class="androidimg" alt='Get it on Google Play' src='assets/googlePlayBadge.svg'/></a>
+    		<br><br><br> -->
+		<p class="w3-text-white"><a href='http://creativecommons.org/licenses/by-sa/4.0/'>CC</a> <a href="https://www.jacksheridan.com">Jack Sheridan</a> | <a href="/faq.html">FAQ</a> | <a href="/about.html">More</a></p>
+            </center>
+	<!-- Footer end -->
+	</div>
+</div>
+	    <script>
+    function checkDevice() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    if (/android/i.test(userAgent)) {
+        document.getElementById("betaBtn").setAttribute("href", "https://docs.google.com/forms/d/e/1FAIpQLSfXaRcKRS2lE4Dcz6Ca31DUkoche3Kr10UgXJknqoDHRcdD9A/viewform?entry.779760595=Android")
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        document.getElementById("betaBtn").setAttribute("href", "https://docs.google.com/forms/d/e/1FAIpQLSfXaRcKRS2lE4Dcz6Ca31DUkoche3Kr10UgXJknqoDHRcdD9A/viewform?entry.779760595=iOS")
+    }
+
+   }
+    </script>
+</body>
+</html>
