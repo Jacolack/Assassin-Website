@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
@@ -36,7 +35,7 @@
                     <h6>Eliminate your target.</h6>
                 </div>
                 <br><br><br>
-                <a class="betaBtn" id="betaBtn" href='https://forms.gle/qp9puDbuDppmNrqGA'><b>Try the Beta</b></a>
+		<a class="betaBtn" id="betaBtn" href=''><b>Try the Beta</b></a>
             </div>
         </div>
 	<!-- Body end -->
@@ -56,16 +55,16 @@
 </div>
 	    <script>
     function checkDevice() {
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
     if (/android/i.test(userAgent)) {
-        document.getElementById("betaBtn").setAttribute("href", "https://docs.google.com/forms/d/e/1FAIpQLSfXaRcKRS2lE4Dcz6Ca31DUkoche3Kr10UgXJknqoDHRcdD9A/viewform?entry.779760595=Android")
+        document.getElementById("betaBtn").setAttribute("href", "https://android.com")
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        document.getElementById("betaBtn").setAttribute("href", "https://testflight.apple.com/join/BQ3XlrGX")
+    } else {
+        document.getElementById("betaBtn").setAttribute("href", "#")
+        document.getElementById("betaBtn").setAttribute("onclick", "alert('Open https://assassin.fun on your mobile device')")
     }
-
-    // iOS detection from: http://stackoverflow.com/a/9039885/177710
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        document.getElementById("betaBtn").setAttribute("href", "https://docs.google.com/forms/d/e/1FAIpQLSfXaRcKRS2lE4Dcz6Ca31DUkoche3Kr10UgXJknqoDHRcdD9A/viewform?entry.779760595=iOS")
-    }
-
    }
     </script>
 </body>
