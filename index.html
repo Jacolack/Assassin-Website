@@ -58,7 +58,7 @@
     // iOS detection from: http://stackoverflow.com/a/9039885/177710
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
     if (/android/i.test(userAgent)) {
-        document.getElementById("betaBtn").setAttribute("href", "https://play.google.com/apps/testing/com.jacksheridan.assassin")
+        document.getElementById("betaBtn").setAttribute("href", "assets/assassin.apk")
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         document.getElementById("betaBtn").setAttribute("href", "https://testflight.apple.com/join/BQ3XlrGX")
     } else {
