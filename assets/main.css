@@ -10,6 +10,38 @@ html,body,h1,h2,h3,h4,h5,h6 {
     color: white;
 }
 
+.page-container {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	height: 100%;
+	height: auto\9; /* IE 8 Hack */
+	min-height: 100%;
+	position: relative;
+}
+.page-content {
+	display: table-cell;
+	height: 100%;
+    vertical-align: middle;
+}
+.footer {
+	display: table-row;
+	height: 1px;
+}
+.vertical-center {
+	height: 100%;
+}
+.vertical-center .page-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.main {
+    margin: auto;
+    max-width: 330px;
+    box-sizing: content-box;
+}
+
 html, body {
     margin:0;
     padding:0;
@@ -36,10 +68,25 @@ html, body {
 h1 {
     font-size: 3em;
     margin: 0;
+    text-align: center;
 }
 
 h5 {
     font-size: 3vmax;
+}
+
+.comingSoonOuter {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 20px;
 }
         
 .big3img {
@@ -49,7 +96,8 @@ h5 {
 .ninja {
     width: 11em;
     vertical-align: middle;
-    
+    margin: auto;
+    display: block;
 }
 
 .column {
@@ -146,44 +194,39 @@ a.betaBtn:link, a.betaBtn:visited {
 }
 
 .centerVertical {
-   text-align: center;
-
+    text-align: center;
     width: 267px;
-     margin: 0 auto;
+    margin: 0 auto;
 }
 
 
-        
-#footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:50px;			/* Height of the footer */
+.footer {
+    display: table-row;
+    height: 1px;
+    width: 100%;
+  text-align: center;
 }
 
-#header p, #header  {
-    margin:0;
-    padding:10px 0 0 10px;
+.footer a {
+    display: block;
+    margin-bottom: 20px; 
 }
-	
-#footer p {
-    margin:0;
-    padding:10px;
-}
-
 
 
 
 .typewriter h6 {
+    display: block;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid transparent; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
+  text-align: center;
   animation: 
-    typing 2.0s steps(22, end),
-    blink-caret .75s step-end 4;
+    typing 2.5s steps(25, end),
+    blink-caret .75s step-end 3;
 }
+
 
 /* The typing effect */
 @keyframes typing {
