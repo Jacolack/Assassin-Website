@@ -192,9 +192,51 @@ a.betaBtn:visited {
   /* Height of the footer */
 }
 
+
+
+.orHolder {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 180px;
+
+
+}
+
+.orLine {
+  height: 2px;
+  background-color: #969696;
+  width: calc(50% - 20px)
+}
+
+.orText {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #969696;
+  width: 40px;
+  text-align: center;
+}
+
+.iosImgHolder {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+
+}
+
 .iosimg {
   font-size: 30px;
-  width: 6em;
+  width: 180px;
+
+  margin: auto;
+}
+
+.betaMsg {
+  text-align: center;
+  width: 180px;
+  margin: auto;
+  margin-top: 0;
+
 }
 
 .androidimg {
