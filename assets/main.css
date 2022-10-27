@@ -2,7 +2,8 @@
   font-family: courier;
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/courier.woff) format('woff'), url(/assets/courier.ttf) format('truetype')
+  src: url(/assets/courier.woff) format("woff"),
+    url(/assets/courier.ttf) format("truetype");
 }
 
 html,
@@ -13,7 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Courier', arial;
+  font-family: "Courier", arial;
   color: white;
   background: #400301;
 }
@@ -71,8 +72,6 @@ body {
   vertical-align: middle;
 }
 
-
-
 .grid-item {
   padding: 20px;
   position: relative;
@@ -84,7 +83,6 @@ h1 {
   font-size: 3em;
   margin: 0;
   text-align: center;
-
 }
 
 h5 {
@@ -156,7 +154,7 @@ h4 {
 
 a.betaBtn:link,
 a.betaBtn:visited {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #000000;
   border-radius: 25px;
   font-size: 17px;
@@ -192,21 +190,19 @@ a.betaBtn:visited {
   /* Height of the footer */
 }
 
-
-
 .orHolder {
   display: flex;
   align-items: center;
   margin: auto;
   width: 180px;
-
-
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .orLine {
   height: 2px;
   background-color: #969696;
-  width: calc(50% - 20px)
+  width: calc(50% - 20px);
 }
 
 .orText {
@@ -221,7 +217,11 @@ a.betaBtn:visited {
   display: flex;
   justify-content: center;
   margin-top: 60px;
+}
 
+.androidImgHolder {
+  display: flex;
+  justify-content: center;
 }
 
 .iosimg {
@@ -229,6 +229,7 @@ a.betaBtn:visited {
   width: 180px;
 
   margin: auto;
+  display: block;
 }
 
 .betaMsg {
@@ -236,7 +237,6 @@ a.betaBtn:visited {
   width: 180px;
   margin: auto;
   margin-top: 0;
-
 }
 
 .androidimg {
@@ -244,14 +244,12 @@ a.betaBtn:visited {
   width: 6em;
 }
 
-
 .centerContainer {
   position: absolute;
   top: 45%;
   -ms-transform: translateY(-55%);
   transform: translateY(-55%);
   width: 100%;
-
 }
 
 .centerVertical {
@@ -259,7 +257,6 @@ a.betaBtn:visited {
   width: 267px;
   margin: 0 auto;
 }
-
 
 .footer {
   display: table-row;
@@ -273,41 +270,35 @@ a.betaBtn:visited {
   margin-bottom: 10px;
 }
 
-
-
 .typewriter h6 {
   display: block;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid transparent;
+  border-right: 0.15em solid transparent;
   /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
   margin: 0 auto;
   /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
   /* Adjust as needed */
   text-align: center;
-  animation:
-    typing 2.5s steps(25, end),
-    blink-caret .75s step-end 3;
+  animation: typing 2.5s steps(25, end), blink-caret 0.75s step-end 3;
 }
-
 
 /* The typing effect */
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 
   to {
-    width: 100%
+    width: 100%;
   }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-
   from,
   to {
     border-color: orange;
